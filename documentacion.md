@@ -30,29 +30,28 @@ Commits relevantes:
 
 Probados con **Bruno** ([colección](./bruno/moviecards-service/)). Todas las peticiones devuelven `200 OK`.
 
-**`POST /actors`**
+**`POST /actors`**\
 ![POST crear actor](./images/crear_actor.png)
 
-**`GET /actors`**
+**`GET /actors`**\
 ![GET listar actores](./images/list_actor.png)
 
-**`GET /actors/{id}`**
+**`GET /actors/{id}`**\
 ![GET consultar actor](./images/get_actor.png)
 
-**`POST /movies`**
+**`POST /movies`**\
 ![POST crear película](./images/crear_peli.png)
 
-**`GET /movies`**
+**`GET /movies`**\
 ![GET listar películas](./images/list_peli.png)
 
-**`GET /movies/{id}`**
+**`GET /movies/{id}`**\
 ![GET consultar película](./images/get_peli.png)
 
-**`GET /movies/insc/{idA}/{idM}`** — inscribir actor en película
+**`GET /movies/insc/{idA}/{idM}`** — inscribir actor en película\
 ![GET inscribir actor](./images/link.png)
 
-Película tras inscribir al actor:
-
+Película tras inscribir al actor:\
 ![GET película con actor inscrito](./images/link_after.png)
 
 ---
