@@ -1,0 +1,26 @@
+meta {
+  name: POST crear actor
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/actors
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "",
+    "name": "Actor de prueba",
+    "birthDate": "1960-05-15",
+    "deadDate": "2020-11-03",
+    "country": "EEUU",
+    "movies": []
+  }
+}
+
+vars:pre-request {
+  baseUrl: https://moviecards-service-sandoval.azurewebsites.net
+}

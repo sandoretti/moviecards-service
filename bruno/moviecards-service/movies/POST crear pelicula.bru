@@ -1,0 +1,24 @@
+meta {
+  name: POST crear pelicula
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/movies
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "",
+    "title": "Pelicula de prueba",
+    "year": 2000,
+    "actors": []
+  }
+}
+
+vars:pre-request {
+  baseUrl: https://moviecards-service-sandoval.azurewebsites.net
+}

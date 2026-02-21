@@ -1,0 +1,15 @@
+meta {
+  name: GET listar actores
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/actors
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  baseUrl: https://moviecards-service-sandoval.azurewebsites.net
+}

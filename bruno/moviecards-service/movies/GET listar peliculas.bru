@@ -1,0 +1,15 @@
+meta {
+  name: GET listar peliculas
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/movies
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  baseUrl: https://moviecards-service-sandoval.azurewebsites.net
+}
